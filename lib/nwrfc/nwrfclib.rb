@@ -275,7 +275,7 @@ module NWRFCLib
   # the SDK
   #############################################################################################################
   # Callback for function server (function implementation)
-  callback :funcimpl, [:pointer, :pointer, :pointer], :int
+  callback :funcimpl, [:pointer, :pointer, :pointer], :int, :blocking => true
 
   # Function mappings
   [
